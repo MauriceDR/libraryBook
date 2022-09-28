@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Books</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Library</h1>
+    <p>A basic component for keeping track of books</p>
+
+    <div class="container">
+      <div class="main">
+        <form action="" method="get">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" placeholder="Book Title" />
+          <label for="author">Author:</label>
+          <input
+            type="text"
+            id="author"
+            name="author"
+            placeholder="Book Author"
+          />
+          <label for="read">Read:</label>
+          <select name="read" id="read">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+          <br />
+          <!-- <input type="submit" value="Complete" id="submit" /> -->
+        </form>
+      </div>
+    </div>
+
+    <button id="open">Complete</button>
+    //////
+
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+        <h1>View Current Books</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa neque
+          laudantium suscipit error provident, voluptatem, alias cumque
+          explicabo modi ducimus quo adipisci voluptatum necessitatibus!
+          Laboriosam reiciendis dolorem ex voluptas delectus.
+        </p>
+        <button id="close">Close</button>
+      </div>
+    </div>
+
+    <footer>Copyright @ MauriceDR 2022</footer>
+  </body>
+  <script src="app.js"></script>
+</html>

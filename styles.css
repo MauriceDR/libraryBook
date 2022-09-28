@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  /* font-family: "Josefin Sans", sans-serif; */
+  text-align: center;
+  background: url("images/library-g63ed0db7b_1920.jpg");
+  overflow: hidden; /*makes image fit, remove any scrolling*/
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(105, 199, 105);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+form {
+  color: white;
+}
+footer {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: rgb(108, 166, 231);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 30px 50px;
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal p {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+body,
+h1 p {
+  color: white;
+}
